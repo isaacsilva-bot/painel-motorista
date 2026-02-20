@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(page_title="Consulta Local", page_icon="🚚")
 
-st.title("🚚 Painel do Motorista (Arquivo Local)")
+st.title("🚚 Consulta de Stuck - Motorista RJ")
 
 # O código agora lê o arquivo que você subiu no GitHub
 try:
