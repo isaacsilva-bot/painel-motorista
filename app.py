@@ -24,7 +24,7 @@ try:
                 st.write("### Suas Entregas:")
                 st.table(busca[['loja', 'Código do Pacote', 'Data']])
             else:
-                st.error("Você não possui pacotes em falta até o momento. Aguarde a próxima atualização. Atualizações "Quarta-feira e Sexta-feira")
+                st.error("Você não possui pacotes em falta até o momento. Aguarde a próxima atualização. Atualizações quarta-feira e sexta-feira")
         else:
             st.warning("Por favor, digite um ID.")
 
