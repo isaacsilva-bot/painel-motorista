@@ -22,7 +22,7 @@ try:
                 st.success(f"Olá, {nome}!")
                 st.metric("Total de Pacotes", len(busca))
                 st.write("### Suas Entregas:")
-                st.table(busca[['loja', 'Código do Pacote']])
+                st.table(busca[['loja', 'Código do Pacote', 'Data']])
             else:
                 st.error("ID não encontrado no arquivo atual.")
         else:
