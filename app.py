@@ -5,7 +5,7 @@ import pandas as pd
 st.set_page_config(page_title="Consulta Local", page_icon="🚚")
 
 # 2. Cabeçalho (Imagem como Banner)
-# use_container_width faz a imagem ocupar a largura total, parecendo um cabeçalho
+# O arquivo logo.png deve estar na mesma pasta no GitHub
 st.image("logo.png", use_container_width=True)
 
 # 3. Título do site
@@ -25,11 +25,19 @@ try:
 
             if not busca.empty:
                 nome = busca.iloc[0]['Motorista']
-                st.success(f"Olá, {nome}! Caso a data de coleta seja próxima a data da sua pesquisa, aguarde 4 dias antes de pesquisar novamente. Os pacotes podem ser reconhecidos durante o passar dos dias e sairá desta lista.")
+                
+                # Mensagem de Boas-vindas
+                st.success(f"Olá, {nome}!")
+                
+                # Frase de instrução em uma linha separada (caixa azul informativa)
+                st.info("Caso a data de coleta seja próxima a data da sua pesquisa, aguarde 4 dias antes de pesquisar novamente. Os pacotes podem ser reconhecidos durante o passar dos dias e sairá desta lista.")
+                
+                # Métricas e Tabela
                 st.metric("Total de Pacotes", len(busca))
                 st.write("### Pacotes não reconhecidos no SOC/HUB:")
                 st.table(busca[['loja', 'Código do Pacote', 'Data']])
             else:
+                # Mensagem caso não encontre o ID
                 st.error("Você não possui pacotes em falta até o momento. Aguarde a próxima atualização. Atualizações quarta-feira e sexta-feira")
         else:
             st.warning("Por favor, digite um ID.")
