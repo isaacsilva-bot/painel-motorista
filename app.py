@@ -30,7 +30,7 @@ try:
                 st.success(f"Olá, {nome}!")
                 
                 # Frase de instrução em uma linha separada (caixa azul informativa)
-                st.info("Caso a data de coleta seja próxima a data da sua pesquisa, aguarde 4 dias antes de pesquisar novamente. Os pacotes podem ser reconhecidos durante o passar dos dias e sairá desta lista.")
+                st.info("Caso a data da coleta esteja próxima à data da sua pesquisa, aguarde 4 dias antes de realizar uma nova consulta. Os pacotes podem ser reconhecidos ao longo dos dias e, consequentemente, deixarão de constar nesta lista.")
                 
                 # Métricas e Tabela
                 st.metric("Total de Pacotes", len(busca))
