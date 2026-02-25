@@ -3,15 +3,15 @@ import pandas as pd
 
 st.set_page_config(page_title="Consulta Local", page_icon="🚚")
 
-st.title("🚚 Consulta de Stuck - Motorista RJ")
+st.title("Consulta de Pacotes com Atraso de Recebimento no SOC")
 
 # O código agora lê o arquivo que você subiu no GitHub
 try:
     df = pd.read_csv("dados.csv")
     
-    id_input = st.text_input("Digite seu ID:", placeholder="Ex: 15471")
+    id_input = st.text_input("Digite seu ID:", placeholder="Ex: 1547109")
 
-    if st.button("Consultar"):
+    if st.button("Consultar ID"):
         if id_input:
             # Garante que a coluna driver_id seja lida como texto
             df['driver_id'] = df['driver_id'].astype(str)
