@@ -21,7 +21,7 @@ try:
                 nome = busca.iloc[0]['Motorista']
                 st.success(f"Olá, {nome}!")
                 st.metric("Total de Pacotes", len(busca))
-                st.write("### Suas Entregas:")
+                st.write("### Pacotes não reconhecidos no SOC/HUB:")
                 st.table(busca[['loja', 'Código do Pacote', 'Data']])
             else:
                 st.error("Você não possui pacotes em falta até o momento. Aguarde a próxima atualização. Atualizações quarta-feira e sexta-feira")
