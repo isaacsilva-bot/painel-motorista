@@ -25,7 +25,7 @@ try:
 
             if not busca.empty:
                 nome = busca.iloc[0]['Motorista']
-                st.success(f"Olá, {nome}!")
+                st.success(f"Olá, {nome}! Caso a data de coleta seja próxima a data da sua pesquisa, aguarde 4 dias antes de pesquisar novamente. Os pacotes podem ser reconhecidos durante o passar dos dias e sairá desta lista.")
                 st.metric("Total de Pacotes", len(busca))
                 st.write("### Pacotes não reconhecidos no SOC/HUB:")
                 st.table(busca[['loja', 'Código do Pacote', 'Data']])
