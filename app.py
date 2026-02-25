@@ -1,8 +1,14 @@
 import streamlit as st
 import pandas as pd
 
+# 1. Configuração da página
 st.set_page_config(page_title="Consulta Local", page_icon="🚚")
 
+# 2. Cabeçalho (Imagem como Banner)
+# use_container_width faz a imagem ocupar a largura total, parecendo um cabeçalho
+st.image("logo.png", use_container_width=True)
+
+# 3. Título do site
 st.title("Consulta de Pacotes com Atraso de Recebimento no SOC")
 
 # O código agora lê o arquivo que você subiu no GitHub
