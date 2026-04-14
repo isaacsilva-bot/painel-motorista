@@ -86,5 +86,5 @@ try:
             st.warning("Por favor, digite um ID.")
 
 except Exception as e:
-    st.error(f"Erro ao carregar dados: {e}")
-    st.info("Verifique se as colunas na sua planilha são exatamente: driver_id, Motorista, loja, Código do Pacote, Data")
+    st.error(f"Erro ao buscar seu nome.: {e}")
+    st.info("Por favor, informe seu analista")
