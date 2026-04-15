@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-
 # 1. Configuração da página
 st.set_page_config(page_title="Consulta SOC", page_icon="🚚", layout="centered")
 
