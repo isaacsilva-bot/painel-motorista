@@ -16,7 +16,7 @@ st.markdown(hide_style, unsafe_allow_html=True)
 
 # --- CONFIGURAÇÃO DO GOOGLE SHEETS ---
 # Novo link atualizado conforme solicitado
-SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTLptCJKIUDiCVR440Z6ZaJxzvRB1WJeCV36OJfnTQ2nBLECWjlZOqslbedcybCY-4cUQSDmNOCEx0U/pubhtml?gid=1766127596&single=true"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTLptCJKIUDiCVR440Z6ZaJxzvRB1WJeCV36OJfnTQ2nBLECWjlZOqslbedcybCY-4cUQSDmNOCEx0U/pub?gid=1766127596&single=true&output=csv"
 
 @st.cache_data(ttl=60)
 def load_data(url):
