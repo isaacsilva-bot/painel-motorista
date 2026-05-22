@@ -39,6 +39,7 @@ try:
     
     id_input = st.text_input("Digite seu ID:", placeholder="Ex: 1547109")
 
+
     if st.button("Consultar ID"):
         if id_input:
             # Tratamento rigoroso: converte ID para string, remove espaços e garante comparação limpa
